@@ -22,6 +22,10 @@ apt-get install -y byacc  && \
 apt-get install -y libmysqlclient-dev  && \
 apt-get install -y php5-mysql
 
+WORKDIR /home/kbsbbs
+
+VOLUME /home/kbsbbs
+
 CMD [ "/bin/sh" ]
 
 #add apache2 service to supervisor
