@@ -20,7 +20,8 @@ apt-get install -y php5-gd  && \
 apt-get install -y bison  && \
 apt-get install -y byacc  && \
 apt-get install -y libmysqlclient-dev  && \
-apt-get install -y php5-mysql
+apt-get install -y php5-mysql	&& \
+apt-get install -y sendmail
 
 WORKDIR /home/kbsbbs
 
