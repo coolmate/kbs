@@ -9,16 +9,16 @@
 $ docker build . -t kbsbbs
 ```
 
-## Run the image: (Go into the container)
+## Run the image:
 ```
 $ ./kbsbbssh.sh
 ```
-or just run from the command line:
+
+### If you don't want to use bbsbbssh.sh and want to run it step by step, you can:
 ```
 $ docker run -p 23:23 -it kbsbbs /bin/bash
 ```
-
-## After jump into the container, start up bbsd in container
+After jump into the container, start up bbsd in container
 ```
 $ cd bin
 $ ./miscd daemon
@@ -26,7 +26,11 @@ $ ./bbslogd
 $ sudo ./bbsd -p 23
 ```
 
-## Use termianl to access the BBS (Set terminal to character encoding to GBK)
+## Use another termianl to access the BBS (Set terminal to character encoding to GBK)
 ```
 $ telnet localhost
 ```
+
+## Initial SYSOP credential:
+Username: `sysop`
+Password: `password`
