@@ -2,19 +2,19 @@
 #define __SYSNAME_H_
 
 #define CONV_PASS  1
-#define NEW_COMERS  1 /* ×¢²áºóÔÚ newcomers °æ×Ô¶¯·¢ÎÄ */
+#define NEW_COMERS  1 /* ×¢ï¿½ï¿½ï¿½ï¿½ï¿½ newcomers ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ */
 #define HAPPY_BBS  0
 #define HAVE_COLOR_DATE  1
 #define HAVE_FRIENDS_NUM 1
 #define HAVE_REVERSE_DNS 0
 #define CHINESE_CHARACTER 1
-#define CNBBS_TOPIC  1 /* ÊÇ·ñÔÚ½øÕ¾¹ý³ÌÖÐÏÔÊ¾ cn.bbs.* Ê®´óÈÈÃÅ»°Ìâ */
-#define MAIL2BOARD  0 /* ÊÇ·ñÔÊÐíÖ±½Ó mail to any board */
-#define MAILOUT   1 /* ÊÇ·ñÔÊÐíÏòÕ¾ÍâÖ÷¶¯·¢ÐÅ */
-#define MANUAL_DENY  0 /*ÊÇ·ñÔÊÐíÊÖ¶¯½â·â*/
+#define CNBBS_TOPIC  1 /* ï¿½Ç·ï¿½ï¿½Ú½ï¿½Õ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ cn.bbs.* Ê®ï¿½ï¿½ï¿½ï¿½ï¿½Å»ï¿½ï¿½ï¿½ */
+#define MAIL2BOARD  0 /* ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ mail to any board */
+#define MAILOUT   1 /* ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+#define MANUAL_DENY  0 /*ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½*/
 #define BBS_SERVICE_DICT 1
 
-#define BUILD_PHP_EXTENSION 1   /*½«php lib±à³Éphp extension */
+#define BUILD_PHP_EXTENSION 1   /*ï¿½ï¿½php libï¿½ï¿½ï¿½php extension */
 /*#define USE_SEM_LOCK 1*/
 
 #ifdef HAVE_MYSQL_SMTH
@@ -32,8 +32,8 @@
 
 #define IDLE_TIMEOUT    (60*20)
 
-#define BBSUID    501
-#define BBSGID    501
+#define BBSUID    1000
+#define BBSGID    1000
 
 /* for bbs2www, by flyriver, 2001.3.9 */
 #define SECNUM 13
@@ -72,17 +72,17 @@
 #define LIFE_DAY_SUICIDE 15
 
 #define DAY_DELETED_CLEAN 30
-#define SEC_DELETED_OLDHOME 2592000 /* 3600*24*30£¬×¢²áÐÂÓÃ»§Èç¹û´æÔÚÕâ¸öÓÃ»§µÄÄ¿Â¼£¬±£ÁôÊ±¼ä */
+#define SEC_DELETED_OLDHOME 2592000 /* 3600*24*30ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ */
 
 #define REGISTER_WAIT_TIME (60)
-#define REGISTER_WAIT_TIME_NAME "1 ·ÖÖÓ"
+#define REGISTER_WAIT_TIME_NAME "1 ï¿½ï¿½ï¿½ï¿½"
 
 #define MAIL_MAILSERVER     "127.0.0.1:25"
 
-#define BBSDOMAIN_DEFAULT "bbs.mysite.net"   /* Õ¾µãÓòÃû */
-#define SHORTNAME_DEFAULT "KBS"              /* Õ¾Ãû¼ò³Æ */
-#define BBSNAME_DEFAULT   "KBS ÊÔÑéÕ¾"       /* Õ¾ÃûÈ«³Æ */
-#define MAILDOMAIN_DEFAULT "mysite.net"      /* ·¢¶ÔÍâÓÊ¼þµÄµØÖ· */
+#define BBSDOMAIN_DEFAULT "bbs.mysite.net"   /* Õ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+#define SHORTNAME_DEFAULT "KBS"              /* Õ¾ï¿½ï¿½ï¿½ï¿½ï¿½ */
+#define BBSNAME_DEFAULT   "KBS ï¿½ï¿½ï¿½ï¿½Õ¾"       /* Õ¾ï¿½ï¿½È«ï¿½ï¿½ */
+#define MAILDOMAIN_DEFAULT "mysite.net"      /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½Äµï¿½Ö· */
 
 #ifdef ENABLE_CUSTOMIZING
 #define NAME_BBS_ENGLISH sysconf_str_default("BBSDOMAIN", BBSDOMAIN_DEFAULT)
@@ -96,63 +96,63 @@
 #define MAIL_BBSDOMAIN   MAILDOMAIN_DEFAULT
 #endif
 
-#define FOOTER_MOVIE  "»¶  Ó­  Í¶  ¸å"
-/*#define ISSUE_LOGIN  "±¾Õ¾Ê¹ÓÃÊï¹â¹«Ë¾Êï¹âÌìÑÝ·þÎñÆ÷"*/
-#define ISSUE_LOGIN  "kbsbbs ÏµÍ³ÊÔÑéÕ¾"
-#define ISSUE_LOGOUT  "»¹ÊÇ×ßÁËÂÞ"
+#define FOOTER_MOVIE  "ï¿½ï¿½  Ó­  Í¶  ï¿½ï¿½"
+/*#define ISSUE_LOGIN  "ï¿½ï¿½Õ¾Ê¹ï¿½ï¿½ï¿½ï¿½â¹«Ë¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý·ï¿½ï¿½ï¿½ï¿½ï¿½"*/
+#define ISSUE_LOGIN  "kbsbbs ÏµÍ³ï¿½ï¿½ï¿½ï¿½Õ¾"
+#define ISSUE_LOGOUT  "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 
-#define NAME_USER_SHORT  "ÓÃ»§"
-#define NAME_USER_LONG  "Ë®Ä¾ÓÃ»§"
+#define NAME_USER_SHORT  "ï¿½Ã»ï¿½"
+#define NAME_USER_LONG  "Ë®Ä¾ï¿½Ã»ï¿½"
 #define NAME_SYSOP  "System Operator"
-#define NAME_BM   "°æÖ÷"
-#define NAME_POLICE  "¾¯²ì"
-#define NAME_SYSOP_GROUP "Õ¾Îñ×é"
-#define NAME_ANONYMOUS  "ÎÒ°®Ë®Ä¾!"
-#define NAME_ANONYMOUS_FROM "ÄäÃûÌìÊ¹µÄ¼Ò"
+#define NAME_BM   "ï¿½ï¿½ï¿½ï¿½"
+#define NAME_POLICE  "ï¿½ï¿½ï¿½ï¿½"
+#define NAME_SYSOP_GROUP "Õ¾ï¿½ï¿½ï¿½ï¿½"
+#define NAME_ANONYMOUS  "ï¿½Ò°ï¿½Ë®Ä¾!"
+#define NAME_ANONYMOUS_FROM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ä¼ï¿½"
 #define ANONYMOUS_DEFAULT 0
 
-#define NAME_MATTER  "Õ¾Îñ"
-#define NAME_SYS_MANAGE  "ÏµÍ³Î¬»¤"
-#define NAME_SEND_MSG  "ËÍÑ¶Ï¢"
-#define NAME_VIEW_MSG  "ËÍÑ¶Ï¢"
+#define NAME_MATTER  "Õ¾ï¿½ï¿½"
+#define NAME_SYS_MANAGE  "ÏµÍ³Î¬ï¿½ï¿½"
+#define NAME_SEND_MSG  "ï¿½ï¿½Ñ¶Ï¢"
+#define NAME_VIEW_MSG  "ï¿½ï¿½Ñ¶Ï¢"
 
 #define CHAT_MAIN_ROOM  "main"
-#define CHAT_TOPIC  "´ó¼ÒÏÈËæ±ãÁÄÁÄ°É"
-#define CHAT_MSG_NOT_OP  "*** Äú²»ÊÇ±¾ÁÄÌìÊÒµÄop ***"
-#define CHAT_ROOM_NAME  "ÁÄÌìÊÒ"
-#define CHAT_SERVER  "ÁÄÌì¹ã³¡"
-#define CHAT_MSG_QUIT  "ÇÐÀëÏµÍ³"
-#define CHAT_OP   "ÁÄÌìÊÒ op"
+#define CHAT_TOPIC  "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä°ï¿½"
+#define CHAT_MSG_NOT_OP  "*** ï¿½ï¿½ï¿½ï¿½ï¿½Ç±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òµï¿½op ***"
+#define CHAT_ROOM_NAME  "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+#define CHAT_SERVER  "ï¿½ï¿½ï¿½ï¿½ã³¡"
+#define CHAT_MSG_QUIT  "ï¿½ï¿½ï¿½ï¿½ÏµÍ³"
+#define CHAT_OP   "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ op"
 #define CHAT_SYSTEM  "ÏµÍ³"
-#define CHAT_PARTY  "´ó¼Ò"
+#define CHAT_PARTY  "ï¿½ï¿½ï¿½"
 
-#define DEFAULT_NICK  "Ã¿Ìì°®Äã¶àÒ»Ð©"
+#define DEFAULT_NICK  "Ã¿ï¿½ì°®ï¿½ï¿½ï¿½Ò»Ð©"
 
-#define MSG_ERR_USERID  "´íÎóµÄÊ¹ÓÃÕß´úºÅ..."
-#define LOGIN_PROMPT  "ÇëÊäÈë´úºÅ"
-#define PASSWD_PROMPT  "ÇëÊäÈëÃÜÂë"
+#define MSG_ERR_USERID  "ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½..."
+#define LOGIN_PROMPT  "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+#define PASSWD_PROMPT  "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 
 #define USE_DEFAULT_PERMSTRINGS
 #define USE_DEFAULT_DEFINESTR
 #define USE_DEFAULT_MAILBOX_PROP_STR
 
 /**
- * ¿´ÔÚÏßÓÃ»§Ê±µÄ°´¼ü´¦Àí×Ö·û¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ê±ï¿½Ä°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
  */
 #define UL_CHANGE_NICK_UPPER   'C'
 #define UL_CHANGE_NICK_LOWER   'c'
 #define UL_SWITCH_FRIEND_UPPER 'F'
 #define UL_SWITCH_FRIEND_LOWER 'f'
 
-/** Ê¹ÓÃÈ±Ê¡µÄFILEHeader½á¹¹*/
+/** Ê¹ï¿½ï¿½È±Ê¡ï¿½ï¿½FILEHeaderï¿½á¹¹*/
 #define HAVE_FILEHEADER_DEFINE
 
 
 /**
 attach define
 */
-#define MAXATTACHMENTCOUNT 20                            //ÎÄÕÂ¸½¼þ¸öÊýÉÏÏÞ
-#define MAXATTACHMENTSIZE 5*1024*1024                     //ÎÄÕÂ¸½¼þÎÄ¼þ³¤¶ÈÉÏÏÞ
+#define MAXATTACHMENTCOUNT 20                            //ï¿½ï¿½ï¿½Â¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define MAXATTACHMENTSIZE 5*1024*1024                     //ï¿½ï¿½ï¿½Â¸ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 
 #define CHECK_IP_LINK 1

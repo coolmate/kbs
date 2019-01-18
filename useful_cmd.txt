@@ -1,0 +1,13 @@
+docker run -v $(pwd)/kbs_bbs:/home/kbsbbs_src -it kbsbbs /bin/bash
+
+./configure --prefix=/home/bbs --enable-site=fb2k-v2 \
+              --with-php --with-mysql --enable-customizing
+
+./configure --prefix=/home/bbs --enable-site=fb2k-v2 \
+              --with-php --with-mysql --enable-ssh --enable-customizing
+
+
+
+#remove all Exited containers:
+
+docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs sudo docker rm
