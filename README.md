@@ -9,16 +9,16 @@
 $ docker build . -t kbsbbs
 ```
 
-## Run the image:
+## Run the image with one script:
 ```
-$ ./kbsbbssh.sh
+$ ./startup.sh
 ```
 
-### If you don't want to use bbsbbssh.sh and want to run it step by step, you can:
+### If you don't want to use startup.sh and want to run it step by step, you can:
 ```
 $ docker run -p 23:23 -it kbsbbs /bin/bash
 ```
-After jump into the container, start up bbsd in container
+After the command above, you are in the bash of the container, now you can start up bbsd in container
 ```
 $ cd bin
 $ ./miscd daemon
